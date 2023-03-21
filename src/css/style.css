@@ -1,0 +1,65 @@
+body {
+  min-height: 100vh;
+  background-color: var(--dark-blue);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  width: 54rem;
+  min-height: 33.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-grayish-blue);
+  border-radius: 1.5rem;
+  padding: 4.8rem;
+  text-align: center;
+}
+
+.card .advice-heading {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  color: var(--neon-green);
+  margin-bottom: 2.4rem;
+}
+
+.card .advice-text {
+  font-size: 2.8rem;
+  line-height: 3.825rem;
+  letter-spacing: -0.03rem;
+  color: var(--light-cyan);
+  margin-bottom: 4rem;
+}
+
+.card .divider-img {
+  margin-bottom: 4rem;
+}
+
+.card .dice-box {
+  bottom: -32px;
+  position: absolute;
+  width: 64px;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--neon-green);
+  border-radius: 50%;
+  transition: all .3s ease-in-out;
+}
+
+.card .dice-box:hover {
+  animation: spin 1s infinite linear;
+  box-shadow: 0 0 40px 0 var(--neon-green);
+  cursor: pointer;
+}
+
+@keyframes spin {
+  100% { rotate: 1turn; }
+}
