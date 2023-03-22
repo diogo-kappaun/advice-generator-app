@@ -17,3 +17,5 @@ async function alterarElementos() {
   idDoConselho.innerHTML = `${conselho.slip.id}`;
   descricaoDoConselho.innerHTML = `${conselho.slip.advice}`;
 }
+
+alterarElementos()
